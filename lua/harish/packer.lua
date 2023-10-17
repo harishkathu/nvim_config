@@ -28,35 +28,35 @@ augroup end
 local last_snapshot = vim.fn.stdpath 'data' .. '/last-snapshot-date'
 
 vim.api.nvim_create_user_command(
-  'PackerSafeUpdate',
-  function()
-    local packer = require('packer')
-    local name = vim.fn.strftime('%Y-%m-%dT%H_%M_%S')
+    'PackerSafeUpdate',
+    function()
+        local packer = require('packer')
+        local name = vim.fn.strftime('%Y-%m-%dT%H_%M_%S')
 
-    packer.snapshot(name)
-    vim.fn.writefile({name}, last_snapshot)
+        packer.snapshot(name)
+        vim.fn.writefile({ name }, last_snapshot)
 
-    local timer = vim.loop.new_timer()
-    local wait_ms = 1000
+        local timer = vim.loop.new_timer()
+        local wait_ms = 1000
 
-    timer:start(wait_ms, 0, function()
-      timer:stop()
-      timer:close()
-      packer.sync()
-    end)
-  end,
-  {}
+        timer:start(wait_ms, 0, function()
+            timer:stop()
+            timer:close()
+            packer.sync()
+        end)
+    end,
+    {}
 )
 
 vim.api.nvim_create_user_command(
-  'PackerRestore',
-  function()
-    local ok, name = pcall(vim.fn.readfile, last_snapshot, 1)
-    if not ok then return end
+    'PackerRestore',
+    function()
+        local ok, name = pcall(vim.fn.readfile, last_snapshot, 1)
+        if not ok then return end
 
-    require('packer').rollback(name[1])
-  end,
-  {}
+        require('packer').rollback(name[1])
+    end,
+    {}
 )
 
 -- Use a protected call so we don't error out on first use
@@ -81,10 +81,11 @@ return packer.startup(function(use)
     use "wbthomason/packer.nvim" -- Have packer manage itself
 
     --  These two plugisn are used by a lot of other ones
-    use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
+    use "nvim-lua/popup.nvim"   -- An implementation of the Popup API from vim in Neovim
     use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
+    use "ellisonleao/glow.nvim" -- Markdown preview within nvim
 
-    -- Colorscheme 
+    -- Colorscheme
     use { "catppuccin/nvim", as = "catppuccin" }
 
     use {
@@ -92,22 +93,22 @@ return packer.startup(function(use)
         branch = 'v1.x',
         requires = {
             -- LSP Support
-            {'neovim/nvim-lspconfig'},
-            {'williamboman/mason.nvim'},
-            {'williamboman/mason-lspconfig.nvim'},
+            { 'neovim/nvim-lspconfig' },
+            { 'williamboman/mason.nvim' },
+            { 'williamboman/mason-lspconfig.nvim' },
 
             -- Autocompletion
-            {'hrsh7th/nvim-cmp'},
-            {'hrsh7th/cmp-buffer'},
-            {'hrsh7th/cmp-path'},
-            {'saadparwaiz1/cmp_luasnip'},
-            {'hrsh7th/cmp-nvim-lsp'},
-            {'hrsh7th/cmp-nvim-lua'},
-            {"hrsh7th/cmp-cmdline"},
+            { 'hrsh7th/nvim-cmp' },
+            { 'hrsh7th/cmp-buffer' },
+            { 'hrsh7th/cmp-path' },
+            { 'saadparwaiz1/cmp_luasnip' },
+            { 'hrsh7th/cmp-nvim-lsp' },
+            { 'hrsh7th/cmp-nvim-lua' },
+            { "hrsh7th/cmp-cmdline" },
 
             -- Snippets
-            {'L3MON4D3/LuaSnip'},
-            {'rafamadriz/friendly-snippets'},
+            { 'L3MON4D3/LuaSnip' },
+            { 'rafamadriz/friendly-snippets' },
         }
     }
     -- Automatically set up your configuration after cloning packer.nvim

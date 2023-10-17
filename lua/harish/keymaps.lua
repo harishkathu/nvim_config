@@ -46,14 +46,6 @@ keymap('n', '<leader>p', [["+p]], opts)
 keymap('v', '<leader>p', [["+p]], opts) 
 keymap('n', '<leader>P', [["+P]], opts) 
 
--- Format (Req. LSP)
-local status_ok, lsp = pcall(require, "vim.lsp.buf.format")
-if status_ok then
-    keymap('n', '<leader>f', vim.lsp.buf.format, opts)
-else
-    vim.notify("vim.lsp.buf.format not found, <leder>f won't work for fotmating")
-end
-
 -- find and replace curr word
 keymap('n', '<leader>s', [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]], opts)
 

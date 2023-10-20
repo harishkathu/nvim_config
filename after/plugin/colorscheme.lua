@@ -7,12 +7,12 @@ local status_ok, sch = pcall(require, scheme)
 if not status_ok then
     vim.notify(scheme .. " not found")
 end
-    
+
 sch.setup({
-    flavour = "frappe", -- latte, frappe, macchiato, mocha
+    flavour = "macchiato", -- latte, frappe, macchiato, mocha
     background = { -- :h background
         light = "latte",
-        dark = "frappe",
+        dark = "macchiato",
     },
     transparent_background = true, -- disables setting the background color.
     show_end_of_buffer = true, -- shows the '~' characters after the end of buffers
@@ -60,4 +60,4 @@ if not status_ok then
   vim.cmd.colorscheme = default_colorscheme
   return
 
-end 
+end

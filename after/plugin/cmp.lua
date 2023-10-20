@@ -11,8 +11,15 @@ cmp.setup({
         { name = 'nvim_lua' },
         { name = 'buffer' },
         { name = 'path' },
+
         { name = 'emoji' },
         { name = 'nerdfont' },
+        {
+            name = 'latex_symbols',
+            option = {
+                strategy = 0,
+            },
+        },
     },
     preselect = 'item',
     completion = {
@@ -45,7 +52,7 @@ cmp.setup({
 })
 
 -- For nvim cmdline completions
-cmp.setup.cmdline({'/', '?'}, {
+cmp.setup.cmdline({ '/', '?' }, {
     mapping = cmp.mapping.preset.cmdline(),
     sources = {
         { name = 'buffer' }
@@ -57,7 +64,11 @@ cmp.setup.cmdline(':', {
     sources = cmp.config.sources({
         { name = 'path' }
     }, {
-        { name = 'cmdline' }
+        {
+            name = 'cmdline',
+            option = {
+                ignore_cmds = {'Man', '!'}
+            }
+        }
     })
 })
-

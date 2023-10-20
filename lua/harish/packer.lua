@@ -88,9 +88,10 @@ return packer.startup(function(use)
     -- Colorscheme
     use { "catppuccin/nvim", as = "catppuccin" }
 
+    -- Lsp_zero and Nvim-Cmp related
     use {
         'VonHeikemen/lsp-zero.nvim',
-        branch = 'v1.x',
+        branch = 'v3.x',
         requires = {
             -- LSP Support
             { 'neovim/nvim-lspconfig' },
@@ -109,6 +110,10 @@ return packer.startup(function(use)
             -- Snippets
             { 'L3MON4D3/LuaSnip' },
             { 'rafamadriz/friendly-snippets' },
+
+            -- Other things i found
+            { 'hrsh7th/cmp-emoji' },
+            { 'chrisgrieser/cmp-nerdfont' },
         }
     }
     -- Automatically set up your configuration after cloning packer.nvim

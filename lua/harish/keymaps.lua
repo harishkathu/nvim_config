@@ -37,17 +37,18 @@ keymap('n', 'n', 'nzzzv', opts)
 keymap('n', 'N', 'Nzzzv', opts)
 
 -- Yamk into clipboard
-keymap('n', '<leader>y', [["+y]], opts) 
-keymap('v', '<leader>y', [["+y]], opts) 
-keymap('n', '<leader>Y', [["+Y]], opts) 
+keymap('n', '<leader>y', [["+y]], opts)
+keymap('v', '<leader>y', [["+y]], opts)
+keymap('n', '<leader>Y', [["+Y]], opts)
 
 -- Yamk into clipboard
-keymap('n', '<leader>p', [["+p]], opts) 
-keymap('v', '<leader>p', [["+p]], opts) 
-keymap('n', '<leader>P', [["+P]], opts) 
+keymap('n', '<leader>p', [["+p]], opts)
+keymap('v', '<leader>p', [["+p]], opts)
+keymap('n', '<leader>P', [["+P]], opts)
 
 -- find and replace curr word
-keymap('n', '<leader>s', [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]], opts)
+keymap('n', '<leader>s', [[/\<<C-r><C-w>\>]], opts)
+keymap('n', '<leader>sr', [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]], opts)
 
 -- source file
 keymap('n', '<leader><leader>', '<cmd>so<CR>', opts)

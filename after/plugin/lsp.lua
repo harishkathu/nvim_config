@@ -48,11 +48,11 @@ lsp.on_attach(function(_, bufnr)
 end)
 
 -- Disable schematic Tokens (soemthign like syantax highlighting i guess, not sure look it up)
-lsp.set_server_config({
-    on_init = function(client)
-        client.server_capabilities.semanticTokensProvider = nil
-    end,
-})
+--lsp.set_server_config({
+--    on_init = function(client)
+--        client.server_capabilities.semanticTokensProvider = nil
+--    end,
+--})
 
 -- At last setup the lsp with above configs
 lsp.setup()

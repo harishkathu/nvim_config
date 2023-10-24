@@ -21,10 +21,6 @@ cmp.setup({
             },
         },
     },
-    preselect = 'item',
-    completion = {
-        completeopt = 'menu,menuone,noinsert',
-    },
     mapping = cmp.mapping.preset.insert({
         --['<C-k>'] = cmp.mapping.select_prev_item(),
         --['<C-j>'] = cmp.mapping.select_next_item(),
@@ -36,7 +32,7 @@ cmp.setup({
             i = cmp.mapping.abort(),
             c = cmp.mapping.close(),
         },
-        ['<CR>'] = cmp.mapping.confirm({ select = true }),
+        ['<CR>'] = cmp.mapping.confirm({ select = false }),
         ['<Tab>'] = cmp_action.luasnip_supertab(),
         ['<S-Tab>'] = cmp_action.luasnip_shift_supertab(),
     }),
@@ -44,10 +40,6 @@ cmp.setup({
         completion = cmp.config.window.bordered(),
         documentation = cmp.config.window.bordered(),
     },
-    --experimental = {
-    --  ghost_text = false,
-    --  native_menu = false,
-    --},
     formatting = cmp_format,
 })
 

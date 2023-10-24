@@ -20,6 +20,22 @@
 
 - Require node for pyright. Used nvm for installing node, migth as well do it that way.
 
+### Treesitter
+
+-  Treesitter requires some c compiler this can be easiy done like this
+
+-  Without c compiler you will get an error saying no c or cpp compiler found in path 
+
+- Install MinGW toolchain and install c, cpp compilers and add to path
+    
+- Run these comands in terminal
+    - > choco install mingw
+    - > "refreshenv" -- refresh the env in terminal ;)
+
+- now open nvim and run these commands
+    - > :TSInstall c
+    - > :TSInstall cpp
+
 
 ## Oh My Posh
 

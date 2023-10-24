@@ -23,13 +23,13 @@ autocmd BufWritePost packer.lua source <afile> | PackerSafeUpdate
 augroup end
 ]]
 
-local last_snapshot = vim.fn.stdpath 'data' .. '/last-snapshot-date'
+local last_snapshot = vim.fn.stdpath "data" .. "/last-snapshot-date"
 
 vim.api.nvim_create_user_command(
-    'PackerSafeUpdate',
+    "PackerSafeUpdate",
     function()
-        local packer = require('packer')
-        local name = vim.fn.strftime('%Y-%m-%dT%H_%M_%S')
+        local packer = require("packer")
+        local name = vim.fn.strftime("%Y-%m-%dT%H_%M_%S")
 
         packer.snapshot(name)
         vim.fn.writefile({ name }, last_snapshot)
@@ -47,17 +47,17 @@ vim.api.nvim_create_user_command(
 )
 
 vim.api.nvim_create_user_command(
-    'PackerRestore',
+    "PackerRestore",
     function()
         local ok, name = pcall(vim.fn.readfile, last_snapshot, 1)
         if not ok then return end
 
-        require('packer').rollback(name[1])
+        require("packer").rollback(name[1])
     end,
     {}
 )
 
--- Use a protected call so we don't error out on first use
+-- Use a protected call so we don"t error out on first use
 local status_ok, packer = pcall(require, "packer")
 if not status_ok then
     vim.notify("Packer not found")
@@ -86,33 +86,58 @@ return packer.startup(function(use)
     -- Colorscheme
     use { "catppuccin/nvim", as = "catppuccin" }
 
+    -- Autopairs
+    use "windwp/nvim-autopairs"
+
+    -- Comments
+    use "numToStr/Comment.nvim"
+    use "JoosepAlviste/nvim-ts-context-commentstring" -- Integrated with treesitter setup in treesitter.lua
+
+    -- GitSigns (https:/github.com/lewis6991/gitsigns.nvim)
+    use "lewis6991/gitsigns.nvim"
+
+    -- Nvim Tree (https:/github.com/nvim-tree/nvim-tree.lua)
+    use "nvim-tree/nvim-web-devicons"
+    use "nvim-tree/nvim-tree.lua"
+
+    -- Telescope
+    use "nvim-telescope/telescope.nvim"
+
+    -- Treesitter
+    use {
+        "nvim-treesitter/nvim-treesitter",
+        run = ":TSUpdate",
+    }
+    use "p00f/nvim-ts-rainbow"
+    use "nvim-treesitter/playground"
+
     -- Lsp_zero and Nvim-Cmp related
     use {
-        'VonHeikemen/lsp-zero.nvim',
-        branch = 'v3.x',
+        "VonHeikemen/lsp-zero.nvim",
+        branch = "v3.x",
         requires = {
             -- LSP Support
-            { 'neovim/nvim-lspconfig' },
-            { 'williamboman/mason.nvim' },
-            { 'williamboman/mason-lspconfig.nvim' },
+            { "neovim/nvim-lspconfig" },
+            { "williamboman/mason.nvim" },
+            { "williamboman/mason-lspconfig.nvim" },
 
             -- Autocompletion
-            { 'hrsh7th/nvim-cmp' },
-            { 'hrsh7th/cmp-buffer' },
-            { 'hrsh7th/cmp-path' },
-            { 'saadparwaiz1/cmp_luasnip' },
-            { 'hrsh7th/cmp-nvim-lsp' },
-            { 'hrsh7th/cmp-nvim-lua' },
+            { "hrsh7th/nvim-cmp" },
+            { "hrsh7th/cmp-buffer" },
+            { "hrsh7th/cmp-path" },
+            { "saadparwaiz1/cmp_luasnip" },
+            { "hrsh7th/cmp-nvim-lsp" },
+            { "hrsh7th/cmp-nvim-lua" },
             { "hrsh7th/cmp-cmdline" },
 
             -- Snippets
-            { 'L3MON4D3/LuaSnip' },
-            { 'rafamadriz/friendly-snippets' },
+            { "L3MON4D3/LuaSnip" },
+            { "rafamadriz/friendly-snippets" },
 
             -- Other things i found
-            { 'hrsh7th/cmp-emoji' },
-            { 'chrisgrieser/cmp-nerdfont' },
-            { 'kdheepak/cmp-latex-symbols' },
+            { "hrsh7th/cmp-emoji" },
+            { "chrisgrieser/cmp-nerdfont" },
+            { "kdheepak/cmp-latex-symbols" },
         },
     }
     -- Automatically set up your configuration after cloning packer.nvim

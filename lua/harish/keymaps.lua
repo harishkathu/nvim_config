@@ -18,7 +18,7 @@ vim.g.maplocalleader = " "
 --   term_mode = "t",
 --   command_mode = "c",
 
-keymap("n", "<leader>e", ":Lex 30<cr>", opts)
+keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
 
 -- Save File --
 keymap("n", "<leader>w", ":w<CR>", opts)
@@ -29,8 +29,8 @@ keymap("n", "<leader>q", ":q<CR>", opts)
 keymap("n", "<leader>fq", ":q!<CR>", opts)
 
 -- Insert empty line without entering insert mode
-keymap('n', '<leader>o', ':<C-u>call append(line("."), repeat([""], v:count1))<CR>', opts)
-keymap('n', '<leader>O', ':<C-u>call append(line(".")-1, repeat([""], v:count1))<CR>', opts)
+--keymap('n', '<leader>o', ':<C-u>call append(line("."), repeat([""], v:count1))<CR>', opts)
+--keymap('n', '<leader>O', ':<C-u>call append(line(".")-1, repeat([""], v:count1))<CR>', opts)
 
 -- Keep search in the middle
 keymap('n', 'n', 'nzzzv', opts)
@@ -47,17 +47,16 @@ keymap('v', '<leader>p', [["+p]], opts)
 keymap('n', '<leader>P', [["+P]], opts)
 
 -- find and replace curr word
-keymap('n', '<leader>s', [[/\<<C-r><C-w>\>]], opts)
-keymap('n', '<leader>sr', [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]], opts)
+keymap('n', '<leader>s', [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]], opts)
 
 -- source file
 keymap('n', '<leader><leader>', '<cmd>so<CR>', opts)
 
 -- QuickFix list nav
-keymap("n", "<leader>K", "<cmd>cnext<CR>zz", opts)
-keymap("n", "<leader>J", "<cmd>cprev<CR>zz", opts)
-keymap("n", "<leader>k", "<cmd>lnext<CR>zz", opts)
-keymap("n", "<leader>j", "<cmd>lprev<CR>zz", opts)
+--keymap("n", "<leader>K", "<cmd>cnext<CR>zz", opts)
+--keymap("n", "<leader>J", "<cmd>cprev<CR>zz", opts)
+--keymap("n", "<leader>k", "<cmd>lnext<CR>zz", opts)
+--keymap("n", "<leader>j", "<cmd>lprev<CR>zz", opts)
 
 -- Normal --
 -- Better window navigation

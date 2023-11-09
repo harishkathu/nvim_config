@@ -89,6 +89,9 @@ return packer.startup(function(use)
     -- Autopairs
     use "windwp/nvim-autopairs"
 
+    -- WhichKey
+    use "folke/which-key.nvim"
+
     -- Comments
     use "numToStr/Comment.nvim"
     use "JoosepAlviste/nvim-ts-context-commentstring" -- Integrated with treesitter setup in treesitter.lua

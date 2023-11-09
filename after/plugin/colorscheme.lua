@@ -49,6 +49,7 @@ sch.setup({
         nvimtree = true,
         treesitter = true,
         ts_rainbow = true,
+        which_key = true,
         notify = false,
         mini = false,
         telescope = { enabled = true, },

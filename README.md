@@ -12,6 +12,9 @@
 - ripgrep
   - > choco install ripgrep
 
+- fd (for better find files)
+  - > choco install fd
+
 
 ## NOTES:
 

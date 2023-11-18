@@ -114,6 +114,16 @@ return packer.startup(function(use)
     use "p00f/nvim-ts-rainbow"
     use "nvim-treesitter/playground"
 
+    -- Markdown Preview (requires npn)
+   use {
+        "iamcco/markdown-preview.nvim",
+        run = "cd app && npm install",
+        setup = function()
+            vim.g.mkdp_filetypes = { "markdown" }
+        end,
+        ft = { "markdown" },
+    }
+
     -- Lsp_zero and Nvim-Cmp related
     use {
         "VonHeikemen/lsp-zero.nvim",

@@ -99,6 +99,31 @@ return packer.startup(function(use)
     -- GitSigns (https:/github.com/lewis6991/gitsigns.nvim)
     use "lewis6991/gitsigns.nvim"
 
+    -- UFO (code folding)
+    use {
+        "kevinhwang91/nvim-ufo",
+        requires = {
+            "kevinhwang91/promise-async",
+            {
+                "luukvbaal/statuscol.nvim",
+                config = function()
+                    local builtin = require("statuscol.builtin")
+                    require("statuscol").setup(
+                        {
+                            relculright = true,
+                            segments = {
+                                { text = { builtin.foldfunc },    click = "v:lua.ScFa" },
+                                { text = { "%s" },                click = "v:lua.ScSa" },
+                                { text = { builtin.lnumfunc, " " }, click = "v:lua.ScLa" }
+                            }
+                        }
+                    )
+                end
+
+            }
+        }
+    }
+
     -- Nvim Tree (https:/github.com/nvim-tree/nvim-tree.lua)
     use "nvim-tree/nvim-web-devicons"
     use "nvim-tree/nvim-tree.lua"
@@ -115,7 +140,7 @@ return packer.startup(function(use)
     use "nvim-treesitter/playground"
 
     -- Markdown Preview (requires npn)
-   use {
+    use {
         "iamcco/markdown-preview.nvim",
         run = "cd app && npm install",
         setup = function()

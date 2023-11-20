@@ -43,16 +43,14 @@ sch.setup({
     custom_highlights = {},
     integrations = {
         -- For more plugins integrations please visit (https://github.com/catppuccin/nvim#integrations)
-        mason = true,
         cmp = true,
         gitsigns = true,
-        nvimtree = true,
-        treesitter = true,
-        ts_rainbow = true,
-        which_key = true,
-        notify = false,
-        mini = false,
-        telescope = { enabled = true, },
+        mason = true,
+        markdown = true,
+        mini = {
+            enabled = true,
+            indentscope_color = "",
+        },
         native_lsp = {
             enabled = true,
             virtual_text = {
@@ -71,6 +69,13 @@ sch.setup({
                 background = true,
             },
         },
+        notify = false,
+        nvimtree = true,
+        treesitter = true,
+        ts_rainbow = true,
+        telescope = { enabled = true, },
+        ufo = true,
+        which_key = true,
     },
 })
 

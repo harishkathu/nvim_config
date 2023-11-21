@@ -22,7 +22,7 @@ configs.setup {
 
     -- Comment strign with TS (https://github.com/JoosepAlviste/nvim-ts-context-commentstring)
     context_commentstring = {
-        enable = true,
+        enable = false,
     },
 
     -- TS rainbow indent [archived] (https://github.com/p00f/nvim-ts-rainbow)

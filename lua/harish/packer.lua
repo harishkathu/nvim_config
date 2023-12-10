@@ -96,6 +96,12 @@ return packer.startup(function(use)
     use "numToStr/Comment.nvim"
     use "JoosepAlviste/nvim-ts-context-commentstring" -- Integrated with treesitter setup in treesitter.lua
 
+    -- Lualine - Status line
+    use {
+      'nvim-lualine/lualine.nvim',
+      requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+    }
+
     -- GitSigns (https:/github.com/lewis6991/gitsigns.nvim)
     use "lewis6991/gitsigns.nvim"
 

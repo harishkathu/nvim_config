@@ -46,6 +46,8 @@ lsp.on_attach(function(_, bufnr)
     vim.keymap.set("i", "<C-h>", function() vim.lsp.buf.signature_help() end, opts)
 end)
 
+vim.lsp.buf.format({ timeout_ms = 5000 })
+
 -- Disable schematic Tokens (soemthign like syantax highlighting i guess, not sure look it up)
 --lsp.set_server_config({
 --    on_init = function(client)

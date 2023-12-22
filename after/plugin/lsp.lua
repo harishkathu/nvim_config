@@ -44,7 +44,6 @@ lsp.on_attach(function(_, bufnr)
     vim.keymap.set("n", "[d", function() vim.diagnostic.goto_next() end, opts)
     vim.keymap.set("n", "]d", function() vim.diagnostic.goto_prev() end, opts)
     vim.keymap.set("i", "<C-h>", function() vim.lsp.buf.signature_help() end, opts)
-
 end)
 
 -- Disable schematic Tokens (soemthign like syantax highlighting i guess, not sure look it up)

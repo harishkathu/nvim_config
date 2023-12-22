@@ -98,8 +98,8 @@ return packer.startup(function(use)
 
     -- Lualine - Status line
     use {
-      'nvim-lualine/lualine.nvim',
-      requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+        'nvim-lualine/lualine.nvim',
+        requires = { 'nvim-tree/nvim-web-devicons', opt = true }
     }
 
     -- GitSigns (https:/github.com/lewis6991/gitsigns.nvim)
@@ -118,8 +118,8 @@ return packer.startup(function(use)
                         {
                             relculright = true,
                             segments = {
-                                { text = { builtin.foldfunc },    click = "v:lua.ScFa" },
-                                { text = { "%s" },                click = "v:lua.ScSa" },
+                                { text = { builtin.foldfunc },      click = "v:lua.ScFa" },
+                                { text = { "%s" },                  click = "v:lua.ScSa" },
                                 { text = { builtin.lnumfunc, " " }, click = "v:lua.ScLa" }
                             }
                         }
@@ -154,6 +154,9 @@ return packer.startup(function(use)
         end,
         ft = { "markdown" },
     }
+
+    -- null-ls
+    use "jose-elias-alvarez/null-ls.nvim"
 
     -- Lsp_zero and Nvim-Cmp related
     use {

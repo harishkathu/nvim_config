@@ -83,6 +83,13 @@ return packer.startup(function(use)
     use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
     use "ellisonleao/glow.nvim" -- Markdown preview within nvim
 
+    -- Alpha nvim (Greeter)
+    use {
+        "goolord/alpha-nvim",
+        -- config = function()
+        --     require 'alpha'.setup(require 'alpha.themes.dashboard'.config)
+        -- end
+    }
     -- Colorscheme
     use { "catppuccin/nvim", as = "catppuccin" }
 

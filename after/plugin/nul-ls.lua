@@ -13,7 +13,6 @@ null_ls.setup({
         format.stylua,
         format.yamlfmt,
 
-        -- diag.biome,
         diag.eslint,
         diag.markdownlint,
         diag.pylint,

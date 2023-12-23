@@ -42,6 +42,7 @@ sch.setup({
     },
     integrations = {
         -- For more plugins integrations please visit (https://github.com/catppuccin/nvim#integrations)
+        alpha = true,
         bufferline = {
             enable = true,
             italics = true,

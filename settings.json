@@ -47,12 +47,12 @@
     {
         "defaults": 
         {
-            "colorScheme": "Catppuccin Macchiato",
+            "colorScheme": "Catppuccin Mocha",
             "font": 
             {
                 "face": "Hack Nerd Font Mono"
             },
-            "opacity": 75,
+            "opacity": 85,
             "useAcrylic": true
         },
         "list": 

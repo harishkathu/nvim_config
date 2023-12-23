@@ -96,6 +96,20 @@ return packer.startup(function(use)
     use "numToStr/Comment.nvim"
     use "JoosepAlviste/nvim-ts-context-commentstring" -- Integrated with treesitter setup in treesitter.lua
 
+    -- Bufferline
+    use {
+        "akinsho/bufferline.nvim",
+        tag = "*",
+        requires = 'nvim-tree/nvim-web-devicons',
+        after = "catppuccin",
+        config = function()
+            require("bufferline").setup {
+                highlights = require("catppuccin.groups.integrations.bufferline").get()
+            }
+        end
+    }
+    use "moll/vim-bbye"
+
     -- Lualine - Status line
     use {
         'nvim-lualine/lualine.nvim',

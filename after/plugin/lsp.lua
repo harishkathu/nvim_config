@@ -38,7 +38,7 @@ lsp.on_attach(function(_, bufnr)
     vim.keymap.set("n", "K", function() vim.lsp.buf.hover() end, opts)
     vim.keymap.set("n", "gl", function() vim.diagnostic.open_float() end, opts)
 
-    vim.keymap.set("n", "<leader>lf", function() vim.lsp.buf.format() end, opts)
+    vim.keymap.set("n", "<leader>lf", function() vim.lsp.buf.format({ timeout_ms=10000 }) end, opts)
     vim.keymap.set("n", "<leader>la", function() vim.lsp.buf.code_action() end, opts)
 
     vim.keymap.set("n", "<leader>lws", function() vim.lsp.buf.workspace_symbol() end, opts)
@@ -47,7 +47,7 @@ lsp.on_attach(function(_, bufnr)
     vim.keymap.set("i", "<C-h>", function() vim.lsp.buf.signature_help() end, opts)
 end)
 
-vim.lsp.buf.format({ timeout_ms = 5000 })
+-- vim.lsp.buf.format({ timeout_ms = 5000 })
 
 -- Disable schematic Tokens (soemthign like syantax highlighting i guess, not sure look it up)
 --lsp.set_server_config({

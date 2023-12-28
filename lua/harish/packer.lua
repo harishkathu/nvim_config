@@ -177,7 +177,9 @@ return packer.startup(function(use)
     }
 
     -- null-ls
-    use "jose-elias-alvarez/null-ls.nvim"
+    -- use "jose-elias-alvarez/null-ls.nvim"
+    -- We use none-ls instead, this is a fork and community managed
+    use "nvimtools/none-ls.nvim"
 
     -- Lsp_zero and Nvim-Cmp related
     use {

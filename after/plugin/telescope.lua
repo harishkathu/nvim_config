@@ -95,6 +95,7 @@ telescope.setup({
 		-- builtin picker
 		find_files = {
 			hidden = true,
+            no_ignore = true,
 		},
 		planets = {
 			show_pluto = true,
@@ -108,3 +109,5 @@ telescope.setup({
 		-- please take a look at the readme of the extension you want to configure
 	},
 })
+
+telescope.load_extension("fzy_native")

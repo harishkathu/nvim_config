@@ -52,7 +52,7 @@ nvim_tree.setup {
         indent_width = 2,
         special_files = { "Cargo.toml", "Makefile", "README.md", "readme.md" },
         symlink_destination = true,
-        highlight_git = false,
+        highlight_git = true,
         highlight_diagnostics = true,
         highlight_opened_files = "none",
         highlight_modified = "none",
@@ -165,7 +165,7 @@ nvim_tree.setup {
         show_on_open_dirs = true,
     },
     filters = {
-        git_ignored = true,
+        git_ignored = false,
         dotfiles = false,
         git_clean = false,
         no_buffer = false,

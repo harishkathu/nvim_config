@@ -21,8 +21,11 @@ null_ls.setup({
         comp.spell,
         comp.tags,
 
+        code_actions.cspell,
         code_actions.gitsigns,
         code_actions.shellcheck,
+        code_actions.proselint,
+        code_actions.refactoring,
 
         hover.dictionary,
         hover.printenv,

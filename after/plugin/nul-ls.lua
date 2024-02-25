@@ -13,7 +13,6 @@ null_ls.setup({
         format.stylua,
         format.yamlfmt,
 
-        diag.eslint,
         diag.markdownlint,
         diag.pylint,
         diag.stylelint,

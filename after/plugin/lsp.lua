@@ -38,16 +38,13 @@ lsp.on_attach(function(_, bufnr)
     vim.keymap.set("n", "K", function() vim.lsp.buf.hover() end, opts)
     vim.keymap.set("n", "gl", function() vim.diagnostic.open_float() end, opts)
 
-    vim.keymap.set("n", "<leader>lf", function() vim.lsp.buf.format({ timeout_ms=5000 }) end, opts)
-    vim.keymap.set("n", "<leader>la", function() vim.lsp.buf.code_action() end, opts)
-
+    vim.keymap.set("n", "<leader>lf", function() vim.lsp.buf.format({ timeout_ms = 5000 }) end, opts)
+    vim.keymap.set("n", "<leader>la", function() vim.lsp.buf.code_action({ timeout_ms = 1000 }) end, opts)
     vim.keymap.set("n", "<leader>lws", function() vim.lsp.buf.workspace_symbol() end, opts)
     vim.keymap.set("n", "[d", function() vim.diagnostic.goto_next() end, opts)
     vim.keymap.set("n", "]d", function() vim.diagnostic.goto_prev() end, opts)
     vim.keymap.set("i", "<C-h>", function() vim.lsp.buf.signature_help() end, opts)
 end)
-
--- vim.lsp.buf.format({ timeout_ms = 5000 })
 
 -- Disable schematic Tokens (soemthign like syantax highlighting i guess, not sure look it up)
 --lsp.set_server_config({
@@ -55,6 +52,24 @@ end)
 --        client.server_capabilities.semanticTokensProvider = nil
 --    end,
 --})
+
+-- require('lspconfig').pyright.setup({
+--     settings = {
+--         pyright = {
+--             -- disableLanguageServices = true,
+--             -- disableOrganizeImports = true,
+--             -- reportMissingModuleSource = "none",
+--             reportMissingImports = "none",
+--             -- reportUndefinedVariable = "none",
+--             disableTaggedHints = true,
+--         },
+--         python = {
+--             analysis = {
+--                 typeCheckingMode = 'off',
+--             },
+--         },
+--     },
+-- })
 
 -- At last setup the lsp with above configs
 lsp.setup()

@@ -16,13 +16,13 @@ null_ls.setup({
         diag.eslint,
         diag.markdownlint,
         diag.pylint,
+        diag.cpplint,
         diag.stylelint,
         diag.yamllint,
+        diag.codespell,
 
-        comp.spell,
         comp.tags,
 
-        code_actions.cspell,
         code_actions.gitsigns,
         code_actions.shellcheck,
         code_actions.proselint,

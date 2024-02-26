@@ -8,12 +8,17 @@ local actions = require("telescope.actions")
 local opts = { noremap = true, silent = true }
 local keymap = vim.api.nvim_set_keymap
 
-keymap("n", "<leader>t", "[[:Telescope ", opts)
+-- keymap("n", "<leader>t", "[[:Telescope ", opts)
 keymap("n", "<leader>ff", "<cmd>Telescope find_files<CR>", opts)
+keymap("n", "<leader>fs", "<cmd>Telescope grep_string<CR>", opts)
 keymap("n", "<leader>gf", "<cmd>Telescope git_files<CR>", opts)
-keymap("n", "<leader>fs", "<cmd>Telescope live_grep<CR>", opts)
--- keymap("n", "<leader>gs", "<cmd>Telescope grep_string<CR>", opts)
--- keymap("n", "<leader>gd", "<cmd>Telescope lsp_definitions<CR>", opts)
+keymap("n", "<leader>gs", "<cmd>Telescope live_grep<CR>", opts)
+
+keymap("n", "gd", "<cmd>Telescope lsp_definitions<CR><esc>", opts)
+keymap("n", "gr", "<cmd>Telescope lsp_references<CR><esc>", opts)
+keymap("n", "gI", "<cmd>Telescope lsp_implementations<CR><esc>", opts)
+keymap("n", "<leader>[d", "<cmd>Telescope diagnostics<CR><esc>", opts)
+keymap("n", "<leader>]d", "<cmd>Telescope diagnostics<CR><esc>", opts)
 
 telescope.setup({
 	defaults = {
@@ -96,6 +101,7 @@ telescope.setup({
 		find_files = {
 			hidden = true,
             no_ignore = true,
+            no_ignore_parent = true,
 		},
 		planets = {
 			show_pluto = true,

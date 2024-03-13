@@ -71,6 +71,15 @@ end)
 --     },
 -- })
 
+require('lspconfig').clangd.setup {
+    -- on_attach = on_attach,
+    -- capabilities = require('mason-lspconfig').default_capabilities(),
+    cmd = {
+        "clangd",
+        "--offset-encoding=utf-8",
+    },
+}
+
 -- At last setup the lsp with above configs
 lsp.setup()
 

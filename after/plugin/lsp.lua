@@ -30,10 +30,10 @@ lsp.on_attach(function(_, bufnr)
     lsp.default_keymaps({ buffer = bufnr })
     local opts = { buffer = bufnr, remap = false }
 
-    -- vim.keymap.set("n", "gD", function() vim.lsp.buf.declaration() end, opts)
-    -- vim.keymap.set("n", "gd", function() vim.lsp.buf.definition() end, opts)
-    -- vim.keymap.set("n", "gI", function() vim.lsp.buf.implementation() end, opts)
-    -- vim.keymap.set("n", "gr", function() vim.lsp.buf.references() end, opts)
+    vim.keymap.set("n", "<leader>gD", function() vim.lsp.buf.declaration() end, opts)
+    vim.keymap.set("n", "<leader>gd", function() vim.lsp.buf.definition() end, opts)
+    vim.keymap.set("n", "<leader>gI", function() vim.lsp.buf.implementation() end, opts)
+    vim.keymap.set("n", "<leader>gr", function() vim.lsp.buf.references() end, opts)
     vim.keymap.set("n", "<F2>", function() vim.lsp.buf.rename() end, opts)
     vim.keymap.set("n", "K", function() vim.lsp.buf.hover() end, opts)
     vim.keymap.set("n", "gl", function() vim.diagnostic.open_float() end, opts)
@@ -71,14 +71,14 @@ end)
 --     },
 -- })
 
-require('lspconfig').clangd.setup {
-    -- on_attach = on_attach,
-    -- capabilities = require('mason-lspconfig').default_capabilities(),
-    cmd = {
-        "clangd",
-        "--offset-encoding=utf-8",
-    },
-}
+-- require('lspconfig').clangd.setup {
+--     -- on_attach = on_attach,
+--     -- capabilities = require('mason-lspconfig').default_capabilities(),
+--     cmd = {
+--         "clangd",
+--         "--offset-encoding=utf-16",
+--     },
+-- }
 
 -- At last setup the lsp with above configs
 lsp.setup()

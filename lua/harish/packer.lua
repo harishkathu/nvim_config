@@ -141,6 +141,10 @@ return packer.startup(function(use)
 		},
 	})
 
+    -- Document for Tabular plugin
+    -- https://raw.githubusercontent.com/godlygeek/tabular/master/doc/Tabular.txt
+    use("godlygeek/tabular")
+
 	-- Nvim Tree (https:/github.com/nvim-tree/nvim-tree.lua)
 	use("nvim-tree/nvim-web-devicons")
 	use("nvim-tree/nvim-tree.lua")

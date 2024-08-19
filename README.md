@@ -54,6 +54,10 @@
 - "catppuccin_custom.omp.json" is the custom json used for oh-my-posh, use this
   when importing the config
 
+## Wezterm
+- For wezterm config just add the below env variable
+>  WEZTERM_CONFIG_FILE = "<path_to_this_folder>\wezterm.lua"
+
 ## PowerShell
 
 - Create Profile

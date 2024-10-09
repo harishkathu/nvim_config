@@ -43,7 +43,7 @@ local platform = vim.fn.has "win32" == 1 and "" or ""
 dashboard.section.footer.val = {
     "",
     "",
-    "  󰂖 "..plugins.." Plugins | "..platform.." | "..v.major.."."..v.minor.."."..v.patch.." | "..datetime
+    "  󰂖 "..plugins.." Plugins | "..platform.." "..v.major.."."..v.minor.."."..v.patch.." | "..datetime
 }
 
 alpha.setup(dashboard.config)

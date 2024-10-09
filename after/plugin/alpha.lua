@@ -2,17 +2,17 @@ local alpha = require("alpha")
 local dashboard = require("alpha.themes.dashboard")
 
 dashboard.section.header.val = {
-	[[                                  __]],
-	[[     ___     ___    ___   __  __ /\_\    ___ ___]],
-	[[    / _ `\  / __`\ / __`\/\ \/\ \\/\ \  / __` __`\]],
-	[[   /\ \/\ \/\  __//\ \_\ \ \ \_/ |\ \ \/\ \/\ \/\ \]],
-	[[   \ \_\ \_\ \____\ \____/\ \___/  \ \_\ \_\ \_\ \_\]],
-	[[    \/_/\/_/\/____/\/___/  \/__/    \/_/\/_/\/_/\/_/]],
-	[[ ]],
-	[[ ]],
-	[[                    Hey Harish 😃 !!]],
-	[[ ]],
-	[[ ]],
+	[[                               __]],
+	[[  ___     ___    ___   __  __ /\_\    ___ ___]],
+	[[ / _ `\  / __`\ / __`\/\ \/\ \\/\ \  / __` __`\]],
+	[[/\ \/\ \/\  __//\ \_\ \ \ \_/ |\ \ \/\ \/\ \/\ \]],
+	[[\ \_\ \_\ \____\ \____/\ \___/  \ \_\ \_\ \_\ \_\]],
+	[[ \/_/\/_/\/____/\/___/  \/__/    \/_/\/_/\/_/\/_/]],
+	[[]],
+	[[]],
+    [[                      Meow! 🐈]],
+	[[]],
+	[[]],
 }
 
 dashboard.section.buttons.val = {
@@ -25,14 +25,25 @@ dashboard.section.buttons.val = {
 	dashboard.button(":source ./session.vim", "  Open last session", "<cmd>source ./session.vim<CR>"),
 }
 
+local function get_table_size(t)
+  local count = 0
+  for _, __ in pairs(t) do
+    count = count + 1
+  end
+  return count
+end
+local opt, start = require('packer.plugin_utils').list_installed_plugins()
+local plugins = get_table_size(opt) + get_table_size(start)
+
+-- local plugins = #vim.tbl_keys(require("lazy").plugins())
+local v = vim.version()
+local datetime = os.date " %d-%m-%Y   %H:%M:%S"
+local platform = vim.fn.has "win32" == 1 and "" or ""
+
 dashboard.section.footer.val = {
-    [[ ]],
-    [[ ]],
-    [[Spent way too much time doing this, and]],
-    [[finally I have less distractions]],
-    [[... ]],
-    [[Hmmm! that's cool let me install that too]],
-    [[                                - Meow! 🐈]],
+    "",
+    "",
+    "  󰂖 "..plugins.." Plugins | "..platform.." | "..v.major.."."..v.minor.."."..v.patch.." | "..datetime
 }
 
 alpha.setup(dashboard.config)

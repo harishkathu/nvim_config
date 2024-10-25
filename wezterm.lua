@@ -53,7 +53,10 @@ config.launch_menu = {
 config.hide_mouse_cursor_when_typing = true
 
 -- Remove the Title bar and enable resizable bars
-config.window_decorations = "INTEGRATED_BUTTONS|RESIZE"
+config.window_decorations = "INTEGRATED_BUTTONS | RESIZE"
+
+config.max_fps = 144
+config.animation_fps = 60
 
 -- Must return a map
 return config

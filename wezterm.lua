@@ -28,7 +28,7 @@ config.font = wezterm.font_with_fallback {
 config.launch_menu = {
   {
     label = 'Powershell',
-    args = { 'powershell.exe' },
+  args = { 'powershell.exe' },
   },
   {
     -- Optional label to show in the launcher. If omitted, a label

@@ -8,10 +8,6 @@ function GET_OS()
     end
 
     -- Unix, Linux variants
-    local fh, err = assert(io.popen("uname -o 2>/dev/null", "r"))
-    if fh then
-        osname = fh:read()
-    end
-
-    return osname or "Windows"
+    local fh = package.config:sub(1,1) == "\\" and "Windows" or "unix"
+    return fh
 end

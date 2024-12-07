@@ -57,19 +57,24 @@ local Terminal = require("toggleterm.terminal").Terminal
 
 if GET_OS() == "Windows" then
 	local cmd_terminal = Terminal:new({ cmd = "cmd.exe", hidden = true })
-
 	function _CMD_TERMINAL()
 		cmd_terminal:toggle()
 	end
 
-	-- Requires env_variable bash.exe = C:\Program Files\Git\bin\bash.exe
-	local shell_terminal = Terminal:new({ cmd = '"C:/Program Files/Git/bin/bash.exe"', hidden = true })
-
+	-- Requires C:\Program Files\Git\bin\ in path
+	local shell_terminal = Terminal:new({ cmd = '"bash.exe"', hidden = true })
 	function _SHELL_TERMINAL()
 		shell_terminal:toggle()
 	end
-    vim.api.nvim_set_keymap("n", [[s<C-\>]], ":lua _SHELL_TERMINAL()<CR>", opts)
+
+    local wsl_terminal = Terminal:new({ cmd = '"wsl"', hidden = true })
+	function _WSL_TERMINAL()
+		wsl_terminal:toggle()
+	end
+
     vim.api.nvim_set_keymap("n", [[c<C-\>]], ":lua _CMD_TERMINAL()<CR>", opts)
+    vim.api.nvim_set_keymap("n", [[s<C-\>]], ":lua _SHELL_TERMINAL()<CR>", opts)
+    vim.api.nvim_set_keymap("n", [[w<C-\>]], ":lua _WSL_TERMINAL()<CR>", opts)
 end
 
 local lazygit = Terminal:new({ cmd = "lazygit", hidden = true })

@@ -21,7 +21,7 @@ sch.setup({
     dim_inactive = {
         enabled = true,            -- dims the background color of inactive window
         shade = "light",
-        percentage = 0.85,         -- percentage of the shade to apply to the inactive window
+        percentage = 0.9,         -- percentage of the shade to apply to the inactive window
     },
     no_italic = false,             -- Force no italic
     no_bold = false,               -- Force no bold
@@ -49,6 +49,7 @@ sch.setup({
             bolds = true,
         },
         cmp = true,
+        fzf = true,
         gitsigns = true,
         gitgutter = false,
         mason = true,
@@ -78,7 +79,7 @@ sch.setup({
         nvimtree = {
             enabled = false,
             show_root = true,
-            transparent_panel = false,
+            transparent_panel = true,
         },
         treesitter = true,
         ts_rainbow = false,

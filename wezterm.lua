@@ -34,7 +34,7 @@ config = {
 
     color_scheme = scheme_for_appearance(wezterm.gui.get_appearance()),
 
-    window_background_opacity = 0.8,
+    window_background_opacity = 0.5,
     win32_system_backdrop = 'Acrylic',
 
     keys = {

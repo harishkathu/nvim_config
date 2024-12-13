@@ -1,12 +1,13 @@
 # Nvim Config
 
 - [Requirements](#requirements)
-- [Windows](#windows)
+  - [Windows](#windows)
 - [Notes](#notes)
-- [Treesitter](#treesitter)
+  - [Treesitter](#treesitter)
 - [Oh My Posh](#oh-my-posh)
+- [Wezterm](#wezterm)
 - [PowerShell](#powershell)
-
+<!--toc:end-->
 ## Requirements
 
 - npm (use nvm to install)
@@ -26,21 +27,21 @@
 
 - If using terminal in windows, remap Ctrl+v to Crtrl+Shift+v.
 
-  - This will allow using Ctrl-v in nvim (visual block mode), but suprisingly
+  - This will allow using Ctrl-v in nvim (visual block mode), but surprisingly
     -\_('-')\_/- and magically XD this does not overwrite the remap. i.e. even
-    after the remap Ctrl-v works for paste but wont work when nvim is active.
+    after the remap Ctrl-v works for paste but won't work when nvim is active.
 
 - Require node for pyright. Used nvm for installing node,
-  migth as well do it that way.
+  might as well do it that way.
 
 ### Treesitter
 
-- Treesitter requires some c compiler this can be easiy done like this
+- Treesitter requires some c compiler this can be easily done like this
 
 - Without c compiler you will get an error saying no c or cpp compiler found in path
 
 - Install MinGW toolchain and install c, cpp compilers and add to path
-- Run these comands in terminal
+- Run these commands in terminal
 
   - > choco install mingw
   - > "refreshenv" -- refresh the env in terminal ;)
@@ -55,8 +56,10 @@
   when importing the config
 
 ## Wezterm
+
 - For wezterm config just add the below env variable
->  WEZTERM_CONFIG_FILE = "<path_to_this_folder>\wezterm.lua"
+
+> WEZTERM_CONFIG_FILE = "<path_to_this_folder>\wezterm.lua"
 
 ## PowerShell
 

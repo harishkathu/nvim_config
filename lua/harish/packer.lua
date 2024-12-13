@@ -160,6 +160,7 @@ return packer.startup(function(use)
     -- Treesitter
     use({
         "nvim-treesitter/nvim-treesitter",
+        tag = "v0.9.3",
         run = ":TSUpdate",
     })
     use("p00f/nvim-ts-rainbow")
@@ -178,8 +179,20 @@ return packer.startup(function(use)
         ft = { "markdown" },
     })
 
-    -- null-ls
+    -- Markdown rendered (renders in Nvim)
+    use({
+        'MeanderingProgrammer/render-markdown.nvim',
+        after = { 'nvim-treesitter' },
+        -- requires = { 'echasnovski/mini.nvim', opt = true }, -- if you use the mini.nvim suite
+        -- requires = { 'echasnovski/mini.icons', opt = true }, -- if you use standalone mini plugins
+        requires = { 'nvim-tree/nvim-web-devicons', opt = true }, -- if you prefer nvim-web-devicons
+        config = function()
+            require('render-markdown').setup({})
+        end,
+    })
+
     -- use "jose-elias-alvarez/null-ls.nvim"
+    -- null-ls
     -- We use none-ls instead, this is a fork and community managed
     use({
         "nvimtools/none-ls.nvim",

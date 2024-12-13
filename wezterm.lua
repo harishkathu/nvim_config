@@ -87,6 +87,8 @@ config = {
         'Hack Nerd Font Mono',
     },
 
+    font_size = 11.0,
+
     -- Right-click on '+' to see the lunch menu
     launch_menu = {
         {

@@ -16,6 +16,7 @@ local config = wezterm.config_builder()
 print(wezterm.gui.enumerate_gpus())
 
 config = {
+    enable_scroll_bar = true,
     automatically_reload_config = true,
 
     hide_mouse_cursor_when_typing = true,
@@ -117,7 +118,7 @@ config = {
 
     window_padding = {
         left = 3,
-        right = 3,
+        right = 5,
         top = 0,
         bottom = 0,
     },

@@ -196,6 +196,7 @@ return packer.startup(function(use)
     -- We use none-ls instead, this is a fork and community managed
     use({
         "nvimtools/none-ls.nvim",
+        requires = { 'nvimtools/none-ls-extras.nvim' },
         lock = true,
     })
 

@@ -15,7 +15,7 @@ null_ls.setup({
 
         diag.markdownlint,
         diag.pylint,
-        diag.cpplint,
+        require("none-ls.diagnostics.cpplint"),
         diag.stylelint,
         diag.yamllint,
         diag.codespell,
@@ -23,7 +23,6 @@ null_ls.setup({
         comp.tags,
 
         code_actions.gitsigns,
-        code_actions.shellcheck,
         code_actions.proselint,
         code_actions.refactoring,
 

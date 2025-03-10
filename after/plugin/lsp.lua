@@ -83,13 +83,6 @@ end)
 -- At last setup the lsp with above configs
 lsp.setup()
 
-local cmp = require('cmp')
-cmp.setup({
-    sources = {
-        { name = 'render-markdown' },
-    },
-})
-
 -- Few other configs
 vim.diagnostic.config({
     -- virtual_text displays the warnings in line

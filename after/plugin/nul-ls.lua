@@ -14,7 +14,9 @@ null_ls.setup({
         format.yamlfmt,
 
         diag.markdownlint,
-        diag.pylint,
+        diag.pylint.with({
+            extra_args = {"--prefer-syubs", "yes"},
+        }),
         require("none-ls.diagnostics.cpplint"),
         diag.stylelint,
         diag.yamllint,

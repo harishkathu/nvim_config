@@ -43,42 +43,42 @@ lsp.on_attach(function(_, bufnr)
     vim.keymap.set("n", "<leader>lws", function() vim.lsp.buf.workspace_symbol() end, opts)
     vim.keymap.set("n", "[d", function() vim.diagnostic.goto_next() end, opts)
     vim.keymap.set("n", "]d", function() vim.diagnostic.goto_prev() end, opts)
-    vim.keymap.set("n", "<C-h>", function() vim.lsp.buf.signature_help() end, opts)
+    vim.keymap.set("n", "<A-h>", function() vim.lsp.buf.signature_help() end, opts)
 end)
 
 -- Disable schematic Tokens (soemthign like syantax highlighting i guess, not sure look it up)
---lsp.set_server_config({
---    on_init = function(client)
---        client.server_capabilities.semanticTokensProvider = nil
---    end,
---})
+lsp.set_server_config({
+   on_init = function(client)
+       client.server_capabilities.semanticTokensProvider = nil
+   end,
+})
 
--- require('lspconfig').pyright.setup({
---     settings = {
---         pyright = {
---             -- disableLanguageServices = true,
---             -- disableOrganizeImports = true,
---             -- reportMissingModuleSource = "none",
---             reportMissingImports = "none",
---             -- reportUndefinedVariable = "none",
---             disableTaggedHints = true,
---         },
---         python = {
---             analysis = {
---                 typeCheckingMode = 'off',
---             },
---         },
---     },
--- })
+require('lspconfig').pyright.setup({
+    settings = {
+        pyright = {
+            -- disableLanguageServices = true,
+            -- disableOrganizeImports = true,
+            -- reportMissingModuleSource = "none",
+            reportMissingImports = "none",
+            -- reportUndefinedVariable = "none",
+            disableTaggedHints = true,
+        },
+        python = {
+            analysis = {
+                typeCheckingMode = 'off',
+            },
+        },
+    },
+})
 
--- require('lspconfig').clangd.setup {
---     -- on_attach = on_attach,
---     -- capabilities = require('mason-lspconfig').default_capabilities(),
---     cmd = {
---         "clangd",
---         "--offset-encoding=utf-16",
---     },
--- }
+require('lspconfig').clangd.setup {
+    -- on_attach = on_attach,
+    -- capabilities = require('mason-lspconfig').default_capabilities(),
+    cmd = {
+        "clangd",
+        "--offset-encoding=utf-16",
+    },
+}
 
 -- At last setup the lsp with above configs
 lsp.setup()

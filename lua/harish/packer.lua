@@ -105,7 +105,7 @@ return packer.startup(function(use)
         after = "catppuccin",
         config = function()
             require("bufferline").setup({
-                highlights = require("catppuccin.groups.integrations.bufferline").get(),
+                highlights = require("catppuccin.special.bufferline").get_theme(),
             })
         end,
     })
@@ -118,7 +118,7 @@ return packer.startup(function(use)
     })
 
     -- GitSigns (https:/github.com/lewis6991/gitsigns.nvim)
-    use("lewis6991/gitsigns.nvim")
+    use({"lewis6991/gitsigns.nvim", tag = "v1.0.0"})
 
     -- UFO (code folding)
     use({
@@ -206,16 +206,16 @@ return packer.startup(function(use)
         branch = "v3.x",
         requires = {
             -- LSP Support
-            { "neovim/nvim-lspconfig" },
+            { "neovim/nvim-lspconfig", tag="v2.0.0" },
             { "williamboman/mason.nvim" },
-            { "williamboman/mason-lspconfig.nvim" },
+            { "williamboman/mason-lspconfig.nvim", tag="v1.32.0" },
 
             -- Autocompletion
             { "hrsh7th/nvim-cmp" },
             { "hrsh7th/cmp-buffer" },
             { "hrsh7th/cmp-path" },
             { "saadparwaiz1/cmp_luasnip" },
-            { "hrsh7th/cmp-nvim-lsp" },
+            { "hrsh7th/cmp-nvim-lsp", commit="a8912b88ce488f411177fc8aed358b04dc246d7b" },
             { "hrsh7th/cmp-nvim-lua" },
             { "hrsh7th/cmp-cmdline" },
 

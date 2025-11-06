@@ -9,6 +9,7 @@ local hover = null_ls.builtins.hover
 null_ls.setup({
     sources = {
         format.black,
+        format.buildifier,
         format.prettier,
         format.stylua,
         format.yamlfmt,
@@ -20,8 +21,9 @@ null_ls.setup({
         require("none-ls.diagnostics.cpplint"),
         diag.stylelint,
         diag.yamllint,
-        diag.codespell,
 
+        diag.buildifier,
+        diag.codespell,
         comp.tags,
 
         code_actions.gitsigns,

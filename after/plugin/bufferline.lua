@@ -2,7 +2,7 @@ local bufferline = require("bufferline")
 local macchiato = require("catppuccin.palettes").get_palette "macchiato"
 
 bufferline.setup({
-    highlights = require("catppuccin.groups.integrations.bufferline").get {
+    highlights = require("catppuccin.special.bufferline").get_theme {
         styles = { "italic", "bold" },
         custom = {
             all = {

@@ -10,7 +10,8 @@
 <!--toc:end-->
 ## Requirements
 
-- npm (use nvm to install)
+- Nvim v0.10.*
+- npm, node (use nvm to install both)
 
 ### Windows
 
@@ -18,21 +19,24 @@
 
 - ripgrep
 
-  - > choco install ripgrep
+  - ```ps1
+    choco install ripgrep
+    ```
 
 - fd (for better find files)
-  - > choco install fd
+  - ```ps1
+    choco install fd
+    ```
 
 ## Notes
 
 - If using terminal in windows, remap Ctrl+v to Crtrl+Shift+v.
 
   - This will allow using Ctrl-v in nvim (visual block mode), but surprisingly
-    -\_('-')\_/- and magically XD this does not overwrite the remap. i.e. even
+    -\\_('-')\_/- and magically XD this does not overwrite the remap. i.e. even
     after the remap Ctrl-v works for paste but won't work when nvim is active.
 
-- Require node for pyright. Used nvm for installing node,
-  might as well do it that way.
+- Require node for pyright. Used nvm for installing node.
 
 ### Treesitter
 
@@ -43,12 +47,20 @@
 - Install MinGW toolchain and install c, cpp compilers and add to path
 - Run these commands in terminal
 
-  - > choco install mingw
-  - > "refreshenv" -- refresh the env in terminal ;)
+  - ```ps1
+    choco install mingw
+    ```
+  - ```ps1
+    "refreshenv" -- refresh the env in terminal ;)
+    ```
 
 - now open nvim and run these commands
-  - > :TSInstall c
-  - > :TSInstall cpp
+  - ```vim
+    :TSInstall c
+    ```
+  - ```vim
+    :TSInstall cpp
+    ```
 
 ## Oh My Posh
 
@@ -65,11 +77,21 @@
 
 - Create Profile
 
-  - > notepda $PROFILE
+  - ```ps1
+    notepad $PROFILE
+    ```
 
-- Disable venv tag
+- To use catppuccin_custom theme (in $PROFILE)
+  - ```ps1
+    oh-my-posh init pwsh --config "C:\Users\emb-harikat\AppData\Local\nvim\catppuccin_custom.omp.json" --eval | Invoke-Expression
+    ```
+- Disable venv tag (in $PROFILE)
 
-  - > $env:VIRTUAL_ENV_DISABLE_PROMPT = 1
+  - ```ps1
+    $env:VIRTUAL_ENV_DISABLE_PROMPT = 1
+    ```
 
-- Disable Ctrl+l binding (clear screen)
-  - > Remove-PSReadLineKeyHandler -Chord Ctrl+l
+- Disable Ctrl+l binding (clear screen) (in $PROFILE)
+  - ```ps1
+    Remove-PSReadLineKeyHandler -Chord Ctrl+l
+    ```

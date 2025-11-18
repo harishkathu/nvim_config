@@ -3,7 +3,7 @@ if not status_ok then
 	vim.log("Toggleterm not found!")
 end
 
-local shell = "bin/bash"
+local shell = "/bin/bash"
 if GET_OS() == "Windows" then
 	shell = "powershell.exe"
 end

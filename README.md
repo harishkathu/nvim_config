@@ -11,6 +11,8 @@
 ## Requirements
 
 - npm (use nvm to install)
+- make and cmake (by treesitter, Mason lsp, etc)
+- g++/gcc compiler (should be accissible through PATH)
 
 ### Windows
 

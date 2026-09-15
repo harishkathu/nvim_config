@@ -1,0 +1,1008 @@
+{
+  "tests": 81,
+  "failures": 0,
+  "disabled": 0,
+  "errors": 0,
+  "timestamp": "2026-09-15T20:25:41Z",
+  "time": "0.005s",
+  "name": "AllTests",
+  "testsuites": [
+    {
+      "name": "InputPortValidationTypedTest\/0",
+      "tests": 1,
+      "failures": 0,
+      "disabled": 0,
+      "errors": 0,
+      "timestamp": "2026-09-15T20:25:41Z",
+      "time": "0s",
+      "testsuite": [
+        {
+          "name": "EmptyMandatoryInputsLeadToDiscardedOutputs",
+          "type_param": "void",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-15T20:25:41Z",
+          "time": "0s",
+          "classname": "InputPortValidationTypedTest\/0"
+        }
+      ]
+    },
+    {
+      "name": "InputPortValidationTypedTest\/1",
+      "tests": 1,
+      "failures": 0,
+      "disabled": 0,
+      "errors": 0,
+      "timestamp": "2026-09-15T20:25:41Z",
+      "time": "0s",
+      "testsuite": [
+        {
+          "name": "EmptyMandatoryInputsLeadToDiscardedOutputs",
+          "type_param": "state_logic::interfaces::driving::arbiter::AggregatedDrivingStates",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-15T20:25:41Z",
+          "time": "0s",
+          "classname": "InputPortValidationTypedTest\/1"
+        }
+      ]
+    },
+    {
+      "name": "InputPortValidationTypedTest\/2",
+      "tests": 1,
+      "failures": 0,
+      "disabled": 0,
+      "errors": 0,
+      "timestamp": "2026-09-15T20:25:41Z",
+      "time": "0s",
+      "testsuite": [
+        {
+          "name": "EmptyMandatoryInputsLeadToDiscardedOutputs",
+          "type_param": "state_logic::datatypes::target_speed::behavior_planning::BehaviorMetaData",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-15T20:25:41Z",
+          "time": "0s",
+          "classname": "InputPortValidationTypedTest\/2"
+        }
+      ]
+    },
+    {
+      "name": "InputPortValidationTypedTest\/3",
+      "tests": 1,
+      "failures": 0,
+      "disabled": 0,
+      "errors": 0,
+      "timestamp": "2026-09-15T20:25:41Z",
+      "time": "0s",
+      "testsuite": [
+        {
+          "name": "EmptyMandatoryInputsLeadToDiscardedOutputs",
+          "type_param": "state_logic::datatypes::target_speed::hmi_parameter::HmiParameter",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-15T20:25:41Z",
+          "time": "0s",
+          "classname": "InputPortValidationTypedTest\/3"
+        }
+      ]
+    },
+    {
+      "name": "InputPortValidationTypedTest\/4",
+      "tests": 1,
+      "failures": 0,
+      "disabled": 0,
+      "errors": 0,
+      "timestamp": "2026-09-15T20:25:41Z",
+      "time": "0s",
+      "testsuite": [
+        {
+          "name": "EmptyMandatoryInputsLeadToDiscardedOutputs",
+          "type_param": "state_logic::datatypes::state_input_adapter::HmiUserInputs",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-15T20:25:41Z",
+          "time": "0s",
+          "classname": "InputPortValidationTypedTest\/4"
+        }
+      ]
+    },
+    {
+      "name": "InputPortValidationTypedTest\/5",
+      "tests": 1,
+      "failures": 0,
+      "disabled": 0,
+      "errors": 0,
+      "timestamp": "2026-09-15T20:25:41Z",
+      "time": "0s",
+      "testsuite": [
+        {
+          "name": "EmptyMandatoryInputsLeadToDiscardedOutputs",
+          "type_param": "state_logic::datatypes::target_speed::vehicle::InstrumentCluster",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-15T20:25:41Z",
+          "time": "0s",
+          "classname": "InputPortValidationTypedTest\/5"
+        }
+      ]
+    },
+    {
+      "name": "InputPortValidationTypedTest\/6",
+      "tests": 1,
+      "failures": 0,
+      "disabled": 0,
+      "errors": 0,
+      "timestamp": "2026-09-15T20:25:41Z",
+      "time": "0s",
+      "testsuite": [
+        {
+          "name": "EmptyMandatoryInputsLeadToDiscardedOutputs",
+          "type_param": "state_logic::datatypes::target_speed::user_inputs::UserInputsMessage",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-15T20:25:41Z",
+          "time": "0s",
+          "classname": "InputPortValidationTypedTest\/6"
+        }
+      ]
+    },
+    {
+      "name": "ParameterValidationTypedTest\/0",
+      "tests": 1,
+      "failures": 0,
+      "disabled": 0,
+      "errors": 0,
+      "timestamp": "2026-09-15T20:25:41Z",
+      "time": "0s",
+      "testsuite": [
+        {
+          "name": "EmptyMandatoryInputsLeadToDiscardedOutputs",
+          "type_param": "state_logic::datatypes::target_speed::hmi_parameter::DevelopmentSettingsParameters",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-15T20:25:41Z",
+          "time": "0s",
+          "classname": "ParameterValidationTypedTest\/0"
+        }
+      ]
+    },
+    {
+      "name": "ParameterValidationTypedTest\/1",
+      "tests": 1,
+      "failures": 0,
+      "disabled": 0,
+      "errors": 0,
+      "timestamp": "2026-09-15T20:25:41Z",
+      "time": "0s",
+      "testsuite": [
+        {
+          "name": "EmptyMandatoryInputsLeadToDiscardedOutputs",
+          "type_param": "state_logic::datatypes::target_speed::hmi_parameter::TargetSpeedParameters",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-15T20:25:41Z",
+          "time": "0s",
+          "classname": "ParameterValidationTypedTest\/1"
+        }
+      ]
+    },
+    {
+      "name": "TargetSpeedStateTest",
+      "tests": 5,
+      "failures": 0,
+      "disabled": 0,
+      "errors": 0,
+      "timestamp": "2026-09-15T20:25:41Z",
+      "time": "0s",
+      "testsuite": [
+        {
+          "name": "EqualObjectsReturnTrue",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-15T20:25:41Z",
+          "time": "0s",
+          "classname": "TargetSpeedStateTest"
+        },
+        {
+          "name": "DifferentTrackedRegionsReturnFalse",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-15T20:25:41Z",
+          "time": "0s",
+          "classname": "TargetSpeedStateTest"
+        },
+        {
+          "name": "DifferentResumeSpeedRegionReturnFalse",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-15T20:25:41Z",
+          "time": "0s",
+          "classname": "TargetSpeedStateTest"
+        },
+        {
+          "name": "DifferentDesiredSpeedsReturnFalse",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-15T20:25:41Z",
+          "time": "0s",
+          "classname": "TargetSpeedStateTest"
+        },
+        {
+          "name": "DifferentFunctionIsActiveReturnFalse",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-15T20:25:41Z",
+          "time": "0s",
+          "classname": "TargetSpeedStateTest"
+        }
+      ]
+    },
+    {
+      "name": "AnnouncementSpeedAdjustmentTest",
+      "tests": 4,
+      "failures": 0,
+      "disabled": 0,
+      "errors": 0,
+      "timestamp": "2026-09-15T20:25:41Z",
+      "time": "0s",
+      "testsuite": [
+        {
+          "name": "IncreaseAnnouncedSpeedWithinAllowedOffset",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-15T20:25:41Z",
+          "time": "0s",
+          "classname": "AnnouncementSpeedAdjustmentTest"
+        },
+        {
+          "name": "DecreaseAnnouncedSpeedWithinAllowedOffset",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-15T20:25:41Z",
+          "time": "0s",
+          "classname": "AnnouncementSpeedAdjustmentTest"
+        },
+        {
+          "name": "DismissAnnouncedSpeedWhenOffsetExceeded",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-15T20:25:41Z",
+          "time": "0s",
+          "classname": "AnnouncementSpeedAdjustmentTest"
+        },
+        {
+          "name": "NoAdjustmentForNonDecreasingAnnouncedSpeed",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-15T20:25:41Z",
+          "time": "0s",
+          "classname": "AnnouncementSpeedAdjustmentTest"
+        }
+      ]
+    },
+    {
+      "name": "SpeedLimitAnnouncementTestFixture",
+      "tests": 1,
+      "failures": 0,
+      "disabled": 0,
+      "errors": 0,
+      "timestamp": "2026-09-15T20:25:41Z",
+      "time": "0s",
+      "testsuite": [
+        {
+          "name": "UpcomingSpeedAnnouncementDependentOnSLAEnablement",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-15T20:25:41Z",
+          "time": "0s",
+          "classname": "SpeedLimitAnnouncementTestFixture"
+        }
+      ]
+    },
+    {
+      "name": "AnnouncementDismissalTest",
+      "tests": 6,
+      "failures": 0,
+      "disabled": 0,
+      "errors": 0,
+      "timestamp": "2026-09-15T20:25:41Z",
+      "time": "0s",
+      "testsuite": [
+        {
+          "name": "DismissAnAnnouncedRegion",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-15T20:25:41Z",
+          "time": "0s",
+          "classname": "AnnouncementDismissalTest"
+        },
+        {
+          "name": "lastDismissedRegionsAreNotAnnounced",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-15T20:25:41Z",
+          "time": "0s",
+          "classname": "AnnouncementDismissalTest"
+        },
+        {
+          "name": "RegionThatBecomesTheCurrentIsNotAnnouncedAnymore",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-15T20:25:41Z",
+          "time": "0s",
+          "classname": "AnnouncementDismissalTest"
+        },
+        {
+          "name": "AnIrrelevantRegionIsNotAnnouncedAndCleared",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-15T20:25:41Z",
+          "time": "0s",
+          "classname": "AnnouncementDismissalTest"
+        },
+        {
+          "name": "DismissConsecutiveAnnouncedRegion",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-15T20:25:41Z",
+          "time": "0s",
+          "classname": "AnnouncementDismissalTest"
+        },
+        {
+          "name": "ConsecutiveIrrelevantRegionIsNotAnnouncedAndCleared",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-15T20:25:41Z",
+          "time": "0s",
+          "classname": "AnnouncementDismissalTest"
+        }
+      ]
+    },
+    {
+      "name": "AnnouncementEarlyAcceptanceTest",
+      "tests": 7,
+      "failures": 0,
+      "disabled": 0,
+      "errors": 0,
+      "timestamp": "2026-09-15T20:25:41Z",
+      "time": "0s",
+      "testsuite": [
+        {
+          "name": "AcceptAnAnnouncedRegion",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-15T20:25:41Z",
+          "time": "0s",
+          "classname": "AnnouncementEarlyAcceptanceTest"
+        },
+        {
+          "name": "SuppressGasPedalSetIfDecreasingSpeedLimitAnnounced",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-15T20:25:41Z",
+          "time": "0s",
+          "classname": "AnnouncementEarlyAcceptanceTest"
+        },
+        {
+          "name": "AcceptedRegionsAreNotAnnounced",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-15T20:25:41Z",
+          "time": "0s",
+          "classname": "AnnouncementEarlyAcceptanceTest"
+        },
+        {
+          "name": "AcceptedRegionBecomesTheCurrentIsNotAnnounced",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-15T20:25:41Z",
+          "time": "0s",
+          "classname": "AnnouncementEarlyAcceptanceTest"
+        },
+        {
+          "name": "AcceptedRegionBecomesIrrelevantAndCleared",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-15T20:25:41Z",
+          "time": "0s",
+          "classname": "AnnouncementEarlyAcceptanceTest"
+        },
+        {
+          "name": "AcceptConsecutiveAnnouncedRegion",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-15T20:25:41Z",
+          "time": "0s",
+          "classname": "AnnouncementEarlyAcceptanceTest"
+        },
+        {
+          "name": "ConsecutiveIrrelevantRegionIsNotAnnouncedAndCleared",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-15T20:25:41Z",
+          "time": "0s",
+          "classname": "AnnouncementEarlyAcceptanceTest"
+        }
+      ]
+    },
+    {
+      "name": "AnnouncementAutoAcceptanceTest",
+      "tests": 3,
+      "failures": 0,
+      "disabled": 0,
+      "errors": 0,
+      "timestamp": "2026-09-15T20:25:41Z",
+      "time": "0s",
+      "testsuite": [
+        {
+          "name": "AnnouncedRegionIsAutoAcceptedWhenCarTakesOverTheSpeed",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-15T20:25:41Z",
+          "time": "0s",
+          "classname": "AnnouncementAutoAcceptanceTest"
+        },
+        {
+          "name": "AnnouncedRegionIsNotRevokedByInvalidRelevantTargetSpeed",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-15T20:25:41Z",
+          "time": "0s",
+          "classname": "AnnouncementAutoAcceptanceTest"
+        },
+        {
+          "name": "AutoAcceptedRegionIsNotReAnnounced",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-15T20:25:41Z",
+          "time": "0s",
+          "classname": "AnnouncementAutoAcceptanceTest"
+        }
+      ]
+    },
+    {
+      "name": "TargetSpeedUpdateResumeInPassiveTest",
+      "tests": 1,
+      "failures": 0,
+      "disabled": 0,
+      "errors": 0,
+      "timestamp": "2026-09-15T20:25:41Z",
+      "time": "0s",
+      "testsuite": [
+        {
+          "name": "ResumeSpeedIsNotUpdateIfTheFunctionWasNeverActive",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-15T20:25:41Z",
+          "time": "0s",
+          "classname": "TargetSpeedUpdateResumeInPassiveTest"
+        }
+      ]
+    },
+    {
+      "name": "TempCompleteIntegrationTestFixture",
+      "tests": 6,
+      "failures": 0,
+      "disabled": 0,
+      "errors": 0,
+      "timestamp": "2026-09-15T20:25:41Z",
+      "time": "0s",
+      "testsuite": [
+        {
+          "name": "CoverAllUserInteractionAndSpeedLimitUseCasesWithRestrictedAndUnrestrictedLimitsAndCapping",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-15T20:25:41Z",
+          "time": "0s",
+          "classname": "TempCompleteIntegrationTestFixture"
+        },
+        {
+          "name": "UnknownSpeedLimitToRestrictedSpeedLimitInCurrentRegion",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-15T20:25:41Z",
+          "time": "0s",
+          "classname": "TempCompleteIntegrationTestFixture"
+        },
+        {
+          "name": "UnknownSpeedLimitToRestrictedSpeedLimitInUpcomingRegion",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-15T20:25:41Z",
+          "time": "0s",
+          "classname": "TempCompleteIntegrationTestFixture"
+        },
+        {
+          "name": "ResumeButtonPressWhileActive",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-15T20:25:41Z",
+          "time": "0s",
+          "classname": "TempCompleteIntegrationTestFixture"
+        },
+        {
+          "name": "TestOffsetForSpeedLimit",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-15T20:25:41Z",
+          "time": "0s",
+          "classname": "TempCompleteIntegrationTestFixture"
+        },
+        {
+          "name": "TargetSpeedSetWithEmptySpeedLimit",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-15T20:25:41Z",
+          "time": "0s",
+          "classname": "TempCompleteIntegrationTestFixture"
+        }
+      ]
+    },
+    {
+      "name": "UnitSwitchTest",
+      "tests": 1,
+      "failures": 0,
+      "disabled": 0,
+      "errors": 0,
+      "timestamp": "2026-09-15T20:25:41Z",
+      "time": "0s",
+      "testsuite": [
+        {
+          "name": "ResumeSpeedAndTargetSpeedProfileAreAdaptedFromKphToMph",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-15T20:25:41Z",
+          "time": "0s",
+          "classname": "UnitSwitchTest"
+        }
+      ]
+    },
+    {
+      "name": "UserSetSpeedWithGasPedalSuite",
+      "tests": 1,
+      "failures": 0,
+      "disabled": 0,
+      "errors": 0,
+      "timestamp": "2026-09-15T20:25:41Z",
+      "time": "0s",
+      "testsuite": [
+        {
+          "name": "TestActivationAndReactivationScenariosWithGasPedal",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-15T20:25:41Z",
+          "time": "0s",
+          "classname": "UserSetSpeedWithGasPedalSuite"
+        }
+      ]
+    },
+    {
+      "name": "UserSetSpeedNoButtonPressTest",
+      "tests": 2,
+      "failures": 0,
+      "disabled": 0,
+      "errors": 0,
+      "timestamp": "2026-09-15T20:25:41Z",
+      "time": "0s",
+      "testsuite": [
+        {
+          "name": "ReturnsResumeSpeedIfNotActiveWithResumeSpeed",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-15T20:25:41Z",
+          "time": "0s",
+          "classname": "UserSetSpeedNoButtonPressTest"
+        },
+        {
+          "name": "ReturnsResumeSpeedIfActive",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-15T20:25:41Z",
+          "time": "0s",
+          "classname": "UserSetSpeedNoButtonPressTest"
+        }
+      ]
+    },
+    {
+      "name": "UserSetSpeedGasPedalPressTest",
+      "tests": 2,
+      "failures": 0,
+      "disabled": 0,
+      "errors": 0,
+      "timestamp": "2026-09-15T20:25:41Z",
+      "time": "0s",
+      "testsuite": [
+        {
+          "name": "ReturnsDisplaySpeedIfGasPedalWithDisplayGreater",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-15T20:25:41Z",
+          "time": "0s",
+          "classname": "UserSetSpeedGasPedalPressTest"
+        },
+        {
+          "name": "GasPedalSuppressedIfLimiterActiveOrPaused",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-15T20:25:41Z",
+          "time": "0s",
+          "classname": "UserSetSpeedGasPedalPressTest"
+        }
+      ]
+    },
+    {
+      "name": "UserSetSpeedHandsFreeActiveTest",
+      "tests": 1,
+      "failures": 0,
+      "disabled": 0,
+      "errors": 0,
+      "timestamp": "2026-09-15T20:25:41Z",
+      "time": "0s",
+      "testsuite": [
+        {
+          "name": "ReturnsSpeedRangeForHandsFreeActive",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-15T20:25:41Z",
+          "time": "0s",
+          "classname": "UserSetSpeedHandsFreeActiveTest"
+        }
+      ]
+    },
+    {
+      "name": "SpeedAnnouncementWhenEnabledAndActive\/SpeedLimitAnnouncementTestSuite",
+      "tests": 8,
+      "failures": 0,
+      "disabled": 0,
+      "errors": 0,
+      "timestamp": "2026-09-15T20:25:41Z",
+      "time": "0s",
+      "testsuite": [
+        {
+          "name": "SpeedIsAnnouncedIfCloseEnough\/0",
+          "value_param": "(16-byte object <E4-38 5E-41 01-00 00-00 00-00 80-3F 01-00 00-00>, 8-byte object <00-00 00-00 5A-00 00-00>, 110 km\/h, { 50 km\/h })",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-15T20:25:41Z",
+          "time": "0s",
+          "classname": "SpeedAnnouncementWhenEnabledAndActive\/SpeedLimitAnnouncementTestSuite"
+        },
+        {
+          "name": "SpeedIsAnnouncedIfCloseEnough\/1",
+          "value_param": "(16-byte object <E4-38 5E-41 01-00 00-00 00-00 80-3F 01-00 00-00>, 8-byte object <00-00 00-00 5A-00 00-00>, 50 km\/h, {})",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-15T20:25:41Z",
+          "time": "0s",
+          "classname": "SpeedAnnouncementWhenEnabledAndActive\/SpeedLimitAnnouncementTestSuite"
+        },
+        {
+          "name": "SpeedIsAnnouncedIfCloseEnough\/2",
+          "value_param": "(16-byte object <E4-38 5E-41 01-63 6F-6E 00-00 C8-43 01-76 69-6D>, 8-byte object <00-00 00-00 5A-00 00-00>, 110 km\/h, {})",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-15T20:25:41Z",
+          "time": "0s",
+          "classname": "SpeedAnnouncementWhenEnabledAndActive\/SpeedLimitAnnouncementTestSuite"
+        },
+        {
+          "name": "SpeedIsAnnouncedIfCloseEnough\/3",
+          "value_param": "(16-byte object <E4-38 5E-41 01-00 00-00 00-00 00-00 00-00 00-00>, 8-byte object <00-00 00-00 5A-00 00-00>, 110 km\/h, {})",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-15T20:25:41Z",
+          "time": "0s",
+          "classname": "SpeedAnnouncementWhenEnabledAndActive\/SpeedLimitAnnouncementTestSuite"
+        },
+        {
+          "name": "SpeedIsAnnouncedIfCloseEnough\/4",
+          "value_param": "(16-byte object <E4-38 DE-41 01-6E 6E-65 00-00 80-3F 01-6D 70-5F>, 8-byte object <00-00 00-00 5A-00 00-00>, 110 km\/h, { 100 km\/h })",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-15T20:25:41Z",
+          "time": "0s",
+          "classname": "SpeedAnnouncementWhenEnabledAndActive\/SpeedLimitAnnouncementTestSuite"
+        },
+        {
+          "name": "SpeedIsAnnouncedIfCloseEnough\/5",
+          "value_param": "(16-byte object <00-00 80-BF 01-64 65-74 00-00 80-3F 01-73 6F-6E>, 8-byte object <00-00 00-00 5A-00 00-00>, 110 km\/h, { 130 km\/h })",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-15T20:25:41Z",
+          "time": "0s",
+          "classname": "SpeedAnnouncementWhenEnabledAndActive\/SpeedLimitAnnouncementTestSuite"
+        },
+        {
+          "name": "SpeedIsAnnouncedIfCloseEnough\/6",
+          "value_param": "(16-byte object <00-00 80-BF 01-00 00-00 00-00 80-3F 01-00 00-00>, 8-byte object <00-00 00-00 DC-00 00-00>, 110 km\/h, { 130 km\/h })",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-15T20:25:41Z",
+          "time": "0s",
+          "classname": "SpeedAnnouncementWhenEnabledAndActive\/SpeedLimitAnnouncementTestSuite"
+        },
+        {
+          "name": "SpeedIsAnnouncedIfCloseEnough\/7",
+          "value_param": "(16-byte object <00-00 80-BF 01-00 00-00 00-00 80-3F 01-00 00-00>, 8-byte object <00-00 00-00 DC-00 00-00>, 130 km\/h, {})",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-15T20:25:41Z",
+          "time": "0s",
+          "classname": "SpeedAnnouncementWhenEnabledAndActive\/SpeedLimitAnnouncementTestSuite"
+        }
+      ]
+    },
+    {
+      "name": "UpdateOfResumeSpeed\/TargetSpeedUpdateResumeInPassiveTest",
+      "tests": 2,
+      "failures": 0,
+      "disabled": 0,
+      "errors": 0,
+      "timestamp": "2026-09-15T20:25:41Z",
+      "time": "0s",
+      "testsuite": [
+        {
+          "name": "ResumeSpeedIsUpdateWithSpeedLimitValue\/0",
+          "value_param": "(true, 8-byte object <00-00 00-00 64-00 00-00>, 8-byte object <00-00 00-00 64-00 00-00>)",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-15T20:25:41Z",
+          "time": "0s",
+          "classname": "UpdateOfResumeSpeed\/TargetSpeedUpdateResumeInPassiveTest"
+        },
+        {
+          "name": "ResumeSpeedIsUpdateWithSpeedLimitValue\/1",
+          "value_param": "(false, 8-byte object <00-00 00-00 64-00 00-00>, 8-byte object <00-00 00-00 50-00 00-00>)",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-15T20:25:41Z",
+          "time": "0s",
+          "classname": "UpdateOfResumeSpeed\/TargetSpeedUpdateResumeInPassiveTest"
+        }
+      ]
+    },
+    {
+      "name": "ProfileAndStateUpdate\/TargetSpeedCappingInRestricted",
+      "tests": 6,
+      "failures": 0,
+      "disabled": 0,
+      "errors": 0,
+      "timestamp": "2026-09-15T20:25:41Z",
+      "time": "0s",
+      "testsuite": [
+        {
+          "name": "CappingValuesAreUsedAndSetAccordingToUserInteraction\/0",
+          "value_param": "({}, 8-byte object <00-00 00-00 64-00 00-00>)",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-15T20:25:41Z",
+          "time": "0s",
+          "classname": "ProfileAndStateUpdate\/TargetSpeedCappingInRestricted"
+        },
+        {
+          "name": "CappingValuesAreUsedAndSetAccordingToUserInteraction\/1",
+          "value_param": "({ 8-byte object <00-00 00-00 80-4E 63-00> }, 8-byte object <00-00 00-00 63-00 00-00>)",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-15T20:25:41Z",
+          "time": "0s",
+          "classname": "ProfileAndStateUpdate\/TargetSpeedCappingInRestricted"
+        },
+        {
+          "name": "CappingValuesAreUsedAndSetAccordingToUserInteraction\/2",
+          "value_param": "({ 8-byte object <01-00 00-00 FD-7F 00-00> }, 8-byte object <00-00 00-00 64-00 00-00>)",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-15T20:25:41Z",
+          "time": "0s",
+          "classname": "ProfileAndStateUpdate\/TargetSpeedCappingInRestricted"
+        },
+        {
+          "name": "CappingValuesAreUsedAndSetAccordingToUserInteraction\/3",
+          "value_param": "({ 8-byte object <02-00 00-00 6A-F9 4C-00> }, 8-byte object <00-00 00-00 6E-00 00-00>)",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-15T20:25:41Z",
+          "time": "0s",
+          "classname": "ProfileAndStateUpdate\/TargetSpeedCappingInRestricted"
+        },
+        {
+          "name": "CappingValuesAreUsedAndSetAccordingToUserInteraction\/4",
+          "value_param": "({ 8-byte object <04-00 00-00 00-00 00-00> }, 8-byte object <00-00 00-00 5A-00 00-00>)",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-15T20:25:41Z",
+          "time": "0s",
+          "classname": "ProfileAndStateUpdate\/TargetSpeedCappingInRestricted"
+        },
+        {
+          "name": "CappingValuesAreUsedAndSetAccordingToUserInteraction\/5",
+          "value_param": "({ 8-byte object <03-00 00-00 00-00 00-00> }, 8-byte object <00-00 00-00 6E-00 00-00>)",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-15T20:25:41Z",
+          "time": "0s",
+          "classname": "ProfileAndStateUpdate\/TargetSpeedCappingInRestricted"
+        }
+      ]
+    },
+    {
+      "name": "ActivationMethods\/ActivationWithButtonChecksTest",
+      "tests": 6,
+      "failures": 0,
+      "disabled": 0,
+      "errors": 0,
+      "timestamp": "2026-09-15T20:25:41Z",
+      "time": "0s",
+      "testsuite": [
+        {
+          "name": "ActivationWithDifferentButtonChecks\/0",
+          "value_param": "({}, 1-byte object <00>, 22.2222 m\/s)",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-15T20:25:41Z",
+          "time": "0s",
+          "classname": "ActivationMethods\/ActivationWithButtonChecksTest"
+        },
+        {
+          "name": "ActivationWithDifferentButtonChecks\/1",
+          "value_param": "({}, 1-byte object <01>, 22.2222 m\/s)",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-15T20:25:41Z",
+          "time": "0s",
+          "classname": "ActivationMethods\/ActivationWithButtonChecksTest"
+        },
+        {
+          "name": "ActivationWithDifferentButtonChecks\/2",
+          "value_param": "({}, 1-byte object <02>, 22.2222 m\/s)",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-15T20:25:41Z",
+          "time": "0s",
+          "classname": "ActivationMethods\/ActivationWithButtonChecksTest"
+        },
+        {
+          "name": "ActivationWithDifferentButtonChecks\/3",
+          "value_param": "({ 8-byte object <00-00 00-00 5A-00 00-00> }, 1-byte object <00>, 22.2222 m\/s)",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-15T20:25:41Z",
+          "time": "0s",
+          "classname": "ActivationMethods\/ActivationWithButtonChecksTest"
+        },
+        {
+          "name": "ActivationWithDifferentButtonChecks\/4",
+          "value_param": "({ 8-byte object <00-00 00-00 5A-00 00-00> }, 1-byte object <01>, 22.2222 m\/s)",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-15T20:25:41Z",
+          "time": "0s",
+          "classname": "ActivationMethods\/ActivationWithButtonChecksTest"
+        },
+        {
+          "name": "ActivationWithDifferentButtonChecks\/5",
+          "value_param": "({ 8-byte object <00-00 00-00 5A-00 00-00> }, 1-byte object <02>, 25 m\/s)",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-15T20:25:41Z",
+          "time": "0s",
+          "classname": "ActivationMethods\/ActivationWithButtonChecksTest"
+        }
+      ]
+    },
+    {
+      "name": "ReactionToButtonPresses\/UserSetSpeedWhenActiveSuite",
+      "tests": 5,
+      "failures": 0,
+      "disabled": 0,
+      "errors": 0,
+      "timestamp": "2026-09-15T20:25:41Z",
+      "time": "0s",
+      "testsuite": [
+        {
+          "name": "SetSpeedChangesAccordingToButtonPresses\/0",
+          "value_param": "({ 8-byte object <00-00 00-00 FD-7F 00-00> }, 36 km\/h, 4-byte object <00-00 00-00>)",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-15T20:25:41Z",
+          "time": "0s",
+          "classname": "ReactionToButtonPresses\/UserSetSpeedWhenActiveSuite"
+        },
+        {
+          "name": "SetSpeedChangesAccordingToButtonPresses\/1",
+          "value_param": "({ 8-byte object <01-00 00-00 B8-08 FC-20> }, 50 km\/h, 4-byte object <00-00 00-00>)",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-15T20:25:41Z",
+          "time": "0s",
+          "classname": "ReactionToButtonPresses\/UserSetSpeedWhenActiveSuite"
+        },
+        {
+          "name": "SetSpeedChangesAccordingToButtonPresses\/2",
+          "value_param": "({ 8-byte object <02-00 00-00 FD-7F 00-00> }, 20 km\/h, 4-byte object <01-00 00-00>)",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-15T20:25:41Z",
+          "time": "0s",
+          "classname": "ReactionToButtonPresses\/UserSetSpeedWhenActiveSuite"
+        },
+        {
+          "name": "SetSpeedChangesAccordingToButtonPresses\/3",
+          "value_param": "({ 8-byte object <03-00 00-00 00-00 00-00> }, 60 km\/h, 4-byte object <00-00 00-00>)",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-15T20:25:41Z",
+          "time": "0s",
+          "classname": "ReactionToButtonPresses\/UserSetSpeedWhenActiveSuite"
+        },
+        {
+          "name": "SetSpeedChangesAccordingToButtonPresses\/4",
+          "value_param": "({ 8-byte object <04-00 00-00 00-00 00-00> }, 40 km\/h, 4-byte object <00-00 00-00>)",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-15T20:25:41Z",
+          "time": "0s",
+          "classname": "ReactionToButtonPresses\/UserSetSpeedWhenActiveSuite"
+        }
+      ]
+    },
+    {
+      "name": "ReactionToActivationWithSetAndResume\/UserSetSpeedWhenPassiveSuite",
+      "tests": 5,
+      "failures": 0,
+      "disabled": 0,
+      "errors": 0,
+      "timestamp": "2026-09-15T20:25:41Z",
+      "time": "0s",
+      "testsuite": [
+        {
+          "name": "ResumeSpeedIsReturnedForAnyButtonPressIfTheFunctionIsPassive\/0",
+          "value_param": "({ 8-byte object <00-00 00-00 FD-7F 00-00> }, 72 km\/h, 4-byte object <00-00 00-00>)",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-15T20:25:41Z",
+          "time": "0s",
+          "classname": "ReactionToActivationWithSetAndResume\/UserSetSpeedWhenPassiveSuite"
+        },
+        {
+          "name": "ResumeSpeedIsReturnedForAnyButtonPressIfTheFunctionIsPassive\/1",
+          "value_param": "({ 8-byte object <01-00 00-00 B8-08 FC-20> }, 72 km\/h, 4-byte object <00-00 00-00>)",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-15T20:25:41Z",
+          "time": "0s",
+          "classname": "ReactionToActivationWithSetAndResume\/UserSetSpeedWhenPassiveSuite"
+        },
+        {
+          "name": "ResumeSpeedIsReturnedForAnyButtonPressIfTheFunctionIsPassive\/2",
+          "value_param": "({ 8-byte object <02-00 00-00 FD-7F 00-00> }, 72 km\/h, 4-byte object <00-00 00-00>)",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-15T20:25:41Z",
+          "time": "0s",
+          "classname": "ReactionToActivationWithSetAndResume\/UserSetSpeedWhenPassiveSuite"
+        },
+        {
+          "name": "ResumeSpeedIsReturnedForAnyButtonPressIfTheFunctionIsPassive\/3",
+          "value_param": "({ 8-byte object <03-00 00-00 00-00 00-00> }, 72 km\/h, 4-byte object <00-00 00-00>)",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-15T20:25:41Z",
+          "time": "0s",
+          "classname": "ReactionToActivationWithSetAndResume\/UserSetSpeedWhenPassiveSuite"
+        },
+        {
+          "name": "ResumeSpeedIsReturnedForAnyButtonPressIfTheFunctionIsPassive\/4",
+          "value_param": "({ 8-byte object <04-00 00-00 00-00 00-00> }, 72 km\/h, 4-byte object <00-00 00-00>)",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-15T20:25:41Z",
+          "time": "0s",
+          "classname": "ReactionToActivationWithSetAndResume\/UserSetSpeedWhenPassiveSuite"
+        }
+      ]
+    }
+  ]
+}

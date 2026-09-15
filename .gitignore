@@ -2,4 +2,7 @@ packer_compiled.lua
 Session.vim
 .exrc
 
+/test_runners/**/*.json
+/test_runners/**/*.xml
+
 !.gitignore

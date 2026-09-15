@@ -6,6 +6,7 @@
     "lavender": "#B4BEFE",
     "os": "#ACB0BE",
     "pink": "#F5C2E7",
+    "dark_pink": "#F4B8E4",
     "peach": "#f5a97f"
   },
   "blocks": [
@@ -210,14 +211,14 @@
       "newline": true,
       "segments": [
         {
-          "template": "\ueeed ",
-          "foreground": "p:peach",
+          "template": "󰏩 ", 
+          "foreground": "p:dark_pink",
           "type": "text",
           "style": "plain"
         },
         {
           "template": "\uf105",
-          "foreground": "p:closer",
+          "foreground": "p:peach",
           "type": "text",
           "style": "plain"
         }

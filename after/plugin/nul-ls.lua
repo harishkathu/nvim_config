@@ -10,6 +10,7 @@ null_ls.setup({
     sources = {
         format.black,
         format.buildifier,
+        format.clang_format,
         format.prettier,
         format.stylua,
         format.yamlfmt,
@@ -18,7 +19,7 @@ null_ls.setup({
         diag.pylint.with({
             extra_args = {"--prefer-syubs", "yes"},
         }),
-        require("none-ls.diagnostics.cpplint"),
+        diag.clazy,
         diag.stylelint,
         diag.yamllint,
 

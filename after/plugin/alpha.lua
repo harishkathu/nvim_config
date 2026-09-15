@@ -22,7 +22,7 @@ dashboard.section.buttons.val = {
 	-- dashboard.button("SPC f r", "  Frecency/MRU"),
 	dashboard.button("SPC f s", "󰈬  Find word"),
 	-- dashboard.button("SPC f m", "  Jump to bookmarks"),
-	dashboard.button(":source ./session.vim", "  Open last session", "<cmd>source ./session.vim<CR>"),
+	dashboard.button(":source ./Session.vim", "  Open last session", "<cmd>source ./Session.vim<CR>"),
 }
 
 local function get_table_size(t)

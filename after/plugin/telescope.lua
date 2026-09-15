@@ -10,6 +10,7 @@ local keymap = vim.api.nvim_set_keymap
 
 keymap("n", "<leader>t", "[[:Telescope ", opts)
 keymap("n", "<leader>ff", "<cmd>Telescope find_files<CR>", opts)
+keymap("n", "<leader>fb", "<cmd>Telescope buffers<CR><ESC>", opts)
 keymap("n", "<leader>fs", "<cmd>Telescope grep_string<CR>", opts)
 keymap("n", "<leader>gf", "<cmd>Telescope git_files<CR>", opts)
 keymap("n", "<leader>gs", "<cmd>Telescope live_grep<CR>", opts)
@@ -26,7 +27,7 @@ telescope.setup({
 
         prompt_prefix = " ",
         selection_caret = " ",
-        path_display = { "smart" },
+        path_display = { "filename_first" },
 
         mappings = {
             i = {

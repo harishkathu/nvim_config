@@ -38,7 +38,7 @@ lsp.on_attach(function(_, bufnr)
     vim.keymap.set("n", "K", function() vim.lsp.buf.hover() end, opts)
     vim.keymap.set("n", "gl", function() vim.diagnostic.open_float() end, opts)
 
-    vim.keymap.set({"n","v"}, "<leader>lf", function() vim.lsp.buf.format({ timeout_ms = 5000 }) end, opts)
+    vim.keymap.set({ "n", "v" }, "<leader>lf", function() vim.lsp.buf.format({ timeout_ms = 5000 }) end, opts)
     vim.keymap.set("n", "<leader>la", function() vim.lsp.buf.code_action({ timeout_ms = 1000 }) end, opts)
     vim.keymap.set("n", "<leader>lws", function() vim.lsp.buf.workspace_symbol() end, opts)
     vim.keymap.set("n", "[d", function() vim.diagnostic.goto_next() end, opts)
@@ -47,13 +47,19 @@ lsp.on_attach(function(_, bufnr)
 end)
 
 -- Disable schematic Tokens (soemthign like syantax highlighting i guess, not sure look it up)
+local capabilities = require('cmp_nvim_lsp').default_capabilities()
+-- Has to be utf16 beacuse null-ls uses utf16 and irritatingly cant be chagned
+capabilities.offsetEncoding = 'utf-16'
+
 lsp.set_server_config({
-   on_init = function(client)
-       client.server_capabilities.semanticTokensProvider = nil
-   end,
+    on_init = function(client)
+        client.server_capabilities.semanticTokensProvider = nil
+    end,
+    capabilities = capabilities,
 })
 
 require('lspconfig').pyright.setup({
+    capabilities = capabilities,
     settings = {
         pyright = {
             -- disableLanguageServices = true,
@@ -72,8 +78,8 @@ require('lspconfig').pyright.setup({
 })
 
 require('lspconfig').clangd.setup {
-    -- on_attach = on_attach,
-    -- capabilities = require('mason-lspconfig').default_capabilities(),
+    on_attach = on_attach,
+    capabilities = capabilities,
     cmd = {
         "clangd",
         "--offset-encoding=utf-16",
